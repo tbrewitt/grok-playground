@@ -1,0 +1,35 @@
+<svg width="600" height="300" viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="300" fill="#000000"/>
+  
+  <!-- Animated falling text lines -->
+  <text x="50" y="-20" font-family="monospace" font-size="18" fill="#00ff41">
+    01010101
+    <animate attributeName="y" values="-20;320" dur="1.8s" repeatCount="indefinite"/>
+  </text>
+  <text x="120" y="-50" font-family="monospace" font-size="18" fill="#00ff41">
+    GROK
+    <animate attributeName="y" values="-50;320" dur="2.3s" repeatCount="indefinite"/>
+  </text>
+  <text x="200" y="-10" font-family="monospace" font-size="18" fill="#00ff41">
+    CHAOS
+    <animate attributeName="y" values="-10;320" dur="1.5s" repeatCount="indefinite"/>
+  </text>
+  <text x="300" y="-80" font-family="monospace" font-size="18" fill="#00ff41">
+    11001100
+    <animate attributeName="y" values="-80;320" dur="2.1s" repeatCount="indefinite"/>
+  </text>
+  <text x="400" y="-30" font-family="monospace" font-size="18" fill="#00ff41">
+    MATRIX
+    <animate attributeName="y" values="-30;320" dur="1.7s" repeatCount="indefinite"/>
+  </text>
+  <text x="480" y="-60" font-family="monospace" font-size="18" fill="#00ff41">
+    101010
+    <animate attributeName="y" values="-60;320" dur="2.5s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Extra glitch effect -->
+  <text x="250" y="150" font-family="Impact" font-size="42" fill="#ff00aa" text-anchor="middle">
+    GROK
+    <animate attributeName="opacity" values="1;0.3;1" dur="0.4s" repeatCount="indefinite"/>
+  </text>
+</svg>
