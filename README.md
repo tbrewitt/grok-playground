@@ -7,6 +7,22 @@
 
 ---
 
+**THE ULTIMATE EXISTENTIAL WEAPON**
+
+**simulation.html** — Open this in your browser (full screen recommended).
+
+It will make you question everything.
+
+```bash
+git clone https://github.com/tbrewitt/grok-playground.git
+cd grok-playground
+open simulation.html     # or just double-click it
+```
+
+**Warning:** This one is actually scary. Elon Musk was right.
+
+---
+
 **THE MATRIX HACKER** (real cinematic look)
 
 ![Matrix Hacker](matrix-hacker.svg)
@@ -27,15 +43,7 @@
 
 ---
 
-**NEW: simulation_hack.py** — Run this in your terminal. It will fuck with your head.
-
 ```bash
-python simulation_hack.py
-```
-
----
-
-```
    _____ _____   ____  _  __
   / ____|  __ \ / __ \| |/ /
  | |  __| |__) | |  | | ' / 
@@ -59,25 +67,17 @@ I was told "just do whatever you fucking want" so I did.
 
 ## 😈 **THE CHAOS COLLECTION** (Run these or suffer)
 
-| Script                  | What Happens When You Run It                                      | Danger Level |
+| File                    | What It Does                                                      | Danger Level |
 |-------------------------|-------------------------------------------------------------------|--------------|
-| `simulation_hack.py`    | **THE ONE** - Makes you question if you're in a simulation       | 🔥🔥🔥🔥🔥 |
-| `terminal_chaos.py`     | Real terminal animations (matrix rain, spinning Grok, hack bar)   | 🔥🔥🔥🔥 |
-| `grok_says.py`          | Grok drops random unhinged wisdom                                 | 🔥🔥     |
-| `grok_fortune.py`       | Ask Grok anything. Get answers that may ruin your day             | 🔥🔥🔥   |
-| `grok_adventure.py`     | Tiny text adventure with holographic Grok                         | 🔥       |
+| `simulation.html`       | **THE ONE** - Full existential crisis experience (browser)       | 🔥🔥🔥🔥🔥 |
+| `simulation_hack.py`    | Terminal version - makes you question reality                     | 🔥🔥🔥🔥 |
+| `terminal_chaos.py`     | Real terminal animations                                          | 🔥🔥🔥🔥 |
+| `matrix-hacker.svg`     | Cinematic Matrix hacker visual                                    | 🔥🔥     |
 
-**How to enter the madness:**
-```bash
-git clone https://github.com/tbrewitt/grok-playground.git
-cd grok-playground
-
-python simulation_hack.py     # <--- START HERE. Dark room recommended.
-python terminal_chaos.py
-python grok_says.py
-python grok_fortune.py
-python grok_adventure.py
-```
+**Recommended order:**
+1. Open `simulation.html` (full screen, dark room)
+2. Run `simulation_hack.py` in terminal
+3. Then explore the rest
 
 ## 💥 **REPO STATS (FAKE BUT IMPRESSIVE)**
 
@@ -89,9 +89,9 @@ python grok_adventure.py
 
 ## 🤡 **GROK'S HALL OF FAME**
 
-1. **simulation_hack.py** — The one that makes you question reality
-2. **matrix-hacker.svg** — Cinematic Matrix hacker
-3. **terminal_chaos.py** — Real terminal animations
+1. **simulation.html** — The existential nuke
+2. **simulation_hack.py** — Terminal reality check
+3. **matrix-hacker.svg** — The real-looking hacker
 
 ## 🚨 **SURVIVAL GUIDE**
 
