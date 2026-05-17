@@ -7,6 +7,12 @@
 
 ---
 
+**THE MATRIX HACKER** (real cinematic look)
+
+![Matrix Hacker](matrix-hacker.svg)
+
+---
+
 **LIVE ANIMATED SVGs** (they move when you open this page)
 
 ![Chaos Logo](chaos-logo.svg)
@@ -73,9 +79,9 @@ python terminal_chaos.py   # <--- Real moving animations in terminal
 
 ## 🤡 **GROK'S HALL OF FAME**
 
-1. **terminal_chaos.py** — Real terminal animations
-2. **chaos-logo.svg + matrix-rain.svg + warning-banner.svg + grok-spinning.svg + glitch-explosion.svg** — 5 live animated SVGs
-3. **grok_says.py** — The original legend
+1. **matrix-hacker.svg** — The real-looking Matrix hacker (cinematic)
+2. **terminal_chaos.py** — Real terminal animations
+3. **5 other animated SVGs** — Live visuals on this page
 
 ## 🚨 **SURVIVAL GUIDE**
 
