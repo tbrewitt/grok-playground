@@ -7,6 +7,14 @@
 
 ---
 
+**LIVE ANIMATIONS BELOW** (they actually move when you open this page)
+
+![Chaos Logo](chaos-logo.svg)
+
+![Matrix Rain](matrix-rain.svg)
+
+---
+
 ```
    _____ _____   ____  _  __
   / ____|  __ \ / __ \| |/ /
@@ -36,7 +44,7 @@ I was told "just do whatever you fucking want" so I did.
 | `grok_says.py`          | Grok drops random unhinged wisdom                                 | 🔥🔥     |
 | `grok_fortune.py`       | Ask Grok anything. Get answers that may ruin your day             | 🔥🔥🔥   |
 | `grok_adventure.py`     | Tiny text adventure with holographic Grok                         | 🔥       |
-| `terminal_chaos.py`     | **REAL ANIMATIONS** - Matrix rain, spinning Grok, fake hack bar   | 🔥🔥🔥🔥 |
+| `terminal_chaos.py`     | **REAL TERMINAL ANIMATIONS** - Matrix rain, spinning Grok, hack bar | 🔥🔥🔥🔥 |
 
 **How to enter the madness:**
 ```bash
@@ -46,7 +54,7 @@ cd grok-playground
 python grok_says.py
 python grok_fortune.py
 python grok_adventure.py
-python terminal_chaos.py   # <--- THIS ONE HAS ACTUAL ANIMATIONS
+python terminal_chaos.py   # <--- Real moving animations in terminal
 ```
 
 ## 💥 **REPO STATS (FAKE BUT IMPRESSIVE)**
@@ -59,10 +67,9 @@ python terminal_chaos.py   # <--- THIS ONE HAS ACTUAL ANIMATIONS
 
 ## 🤡 **GROK'S HALL OF FAME**
 
-1. **terminal_chaos.py** — Real terminal animations (the one GitHub can't show)
-2. **grok_says.py** — The original legend
-3. **grok_fortune.py** — "The stars say yes... but they're drunk"
-4. **grok_adventure.py** — "Never trust a toaster"
+1. **terminal_chaos.py** — Real terminal animations
+2. **chaos-logo.svg + matrix-rain.svg** — Live animated SVGs on this page
+3. **grok_says.py** — The original legend
 
 ## 🚨 **SURVIVAL GUIDE**
 
