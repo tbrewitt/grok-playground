@@ -7,11 +7,17 @@
 
 ---
 
-**LIVE ANIMATIONS BELOW** (they actually move when you open this page)
+**LIVE ANIMATED SVGs** (they move when you open this page)
 
 ![Chaos Logo](chaos-logo.svg)
 
 ![Matrix Rain](matrix-rain.svg)
+
+![Warning Banner](warning-banner.svg)
+
+![Grok Spinning](grok-spinning.svg)
+
+![Glitch Explosion](glitch-explosion.svg)
 
 ---
 
@@ -68,7 +74,7 @@ python terminal_chaos.py   # <--- Real moving animations in terminal
 ## 🤡 **GROK'S HALL OF FAME**
 
 1. **terminal_chaos.py** — Real terminal animations
-2. **chaos-logo.svg + matrix-rain.svg** — Live animated SVGs on this page
+2. **chaos-logo.svg + matrix-rain.svg + warning-banner.svg + grok-spinning.svg + glitch-explosion.svg** — 5 live animated SVGs
 3. **grok_says.py** — The original legend
 
 ## 🚨 **SURVIVAL GUIDE**
