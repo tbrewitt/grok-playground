@@ -1,0 +1,26 @@
+<svg width="600" height="200" viewBox="0 0 600 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="200" fill="#000000"/>
+  
+  <!-- Multiple glitch layers -->
+  <text x="300" y="100" font-family="Impact" font-size="64" fill="#ff00aa" text-anchor="middle">
+    GROK
+    <animate attributeName="x" values="300;305;295;300" dur="0.2s" repeatCount="indefinite"/>
+    <animate attributeName="fill" values="#ff00aa;#00ffff;#ffff00;#ff00aa" dur="0.3s" repeatCount="indefinite"/>
+  </text>
+
+  <text x="300" y="100" font-family="Impact" font-size="64" fill="#00ffff" text-anchor="middle" opacity="0.6">
+    GROK
+    <animate attributeName="x" values="300;290;310;300" dur="0.25s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Explosion particles -->
+  <circle cx="200" cy="80" r="6" fill="#ffff00">
+    <animate attributeName="cy" values="80;40;120;80" dur="0.6s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="400" cy="120" r="6" fill="#ff00aa">
+    <animate attributeName="cy" values="120;90;150;120" dur="0.7s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="250" cy="150" r="4" fill="#00ffff">
+    <animate attributeName="cy" values="150;100;170;150" dur="0.5s" repeatCount="indefinite"/>
+  </circle>
+</svg>
