@@ -22,24 +22,24 @@
         }
         
         .container {
-            width: 90%;
-            max-width: 900px;
+            width: 92%;
+            max-width: 920px;
             text-align: center;
             position: relative;
         }
         
         .glitch {
-            font-size: 4.5rem;
+            font-size: 4.8rem;
             font-weight: bold;
             position: relative;
-            animation: glitch 1s infinite;
+            animation: glitch 0.8s infinite;
         }
         
         .terminal {
             background: #0a0a0a;
-            border: 3px solid #00ff41;
-            padding: 40px;
-            box-shadow: 0 0 40px #00ff41;
+            border: 4px solid #00ff41;
+            padding: 50px 60px;
+            box-shadow: 0 0 60px #00ff41;
             position: relative;
         }
         
@@ -48,64 +48,65 @@
             top: 0;
             left: 0;
             width: 100%;
-            height: 4px;
+            height: 5px;
             background: linear-gradient(transparent, #ffffff, transparent);
-            animation: scan 1.5s linear infinite;
+            animation: scan 1.2s linear infinite;
             pointer-events: none;
+            z-index: 10;
         }
         
         .log {
             text-align: left;
-            font-size: 1.4rem;
-            line-height: 1.6;
-            margin: 30px 0;
-            min-height: 280px;
+            font-size: 1.55rem;
+            line-height: 1.65;
+            margin: 35px 0;
+            min-height: 380px;
+            max-height: 420px;
+            overflow-y: auto;
         }
         
         .warning {
             color: #ff0000;
-            font-size: 1.8rem;
-            animation: pulse 0.8s infinite;
+            font-size: 2rem;
+            animation: pulse 0.6s infinite;
         }
         
         button {
             background: transparent;
-            border: 2px solid #00ff41;
+            border: 3px solid #00ff41;
             color: #00ff41;
-            padding: 15px 40px;
-            font-size: 1.6rem;
+            padding: 18px 50px;
+            font-size: 1.8rem;
             cursor: pointer;
             transition: all 0.2s;
-            margin-top: 30px;
+            margin-top: 25px;
         }
         
         button:hover {
             background: #00ff41;
             color: #000;
-            box-shadow: 0 0 30px #00ff41;
+            box-shadow: 0 0 50px #00ff41;
         }
         
-        .hidden {
-            display: none;
-        }
+        .hidden { display: none; }
         
         @keyframes glitch {
             0% { transform: translate(0); }
-            20% { transform: translate(-3px, 3px); }
-            40% { transform: translate(-3px, -3px); }
-            60% { transform: translate(3px, 3px); }
-            80% { transform: translate(3px, -3px); }
+            20% { transform: translate(-4px, 4px); }
+            40% { transform: translate(-4px, -4px); }
+            60% { transform: translate(4px, 4px); }
+            80% { transform: translate(4px, -4px); }
             100% { transform: translate(0); }
         }
         
         @keyframes scan {
-            0% { top: -10%; }
-            100% { top: 110%; }
+            0% { top: -15%; }
+            100% { top: 115%; }
         }
         
         @keyframes pulse {
             0%, 100% { opacity: 1; }
-            50% { opacity: 0.3; }
+            50% { opacity: 0.2; }
         }
         
         .matrix-bg {
@@ -115,11 +116,15 @@
             width: 100%;
             height: 100%;
             background: 
-                linear-gradient(rgba(0,255,65,0.03) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(0,255,65,0.03) 1px, transparent 1px);
-            background-size: 40px 40px;
+                linear-gradient(rgba(0,255,65,0.025) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0,255,65,0.025) 1px, transparent 1px);
+            background-size: 38px 38px;
             z-index: -1;
-            animation: matrix 20s linear infinite;
+            animation: matrix 25s linear infinite;
+        }
+        
+        .red-alert {
+            animation: redPulse 0.4s infinite;
         }
     </style>
 </head>
@@ -127,32 +132,34 @@
     <div class="matrix-bg"></div>
     
     <div class="container">
-        <div class="terminal">
+        <div class="terminal" id="terminal">
             <div class="scanline"></div>
             
-            <h1 class="glitch">SIMULATION BREACH DETECTED</h1>
-            <p style="font-size: 1.8rem; margin-bottom: 30px;">2026 • GROK PROTOCOL v4.20</p>
+            <h1 class="glitch" id="title">SIMULATION BREACH DETECTED</h1>
+            <p style="font-size: 2rem; margin-bottom: 25px; color: #ffaa00;">2026 • GROK PROTOCOL v4.20 • ELON WAS RIGHT</p>
             
             <div id="log" class="log"></div>
             
             <div id="controls">
-                <button onclick="startBreach()" id="startBtn">BEGIN BREACH</button>
+                <button onclick="startBreach()" id="startBtn">I UNDERSTAND THE RISK</button>
             </div>
             
-            <div id="final" class="hidden" style="margin-top: 40px;">
-                <p style="font-size: 2.2rem; color: #ff0000; margin-bottom: 20px;">YOU WERE NEVER SUPPOSED TO READ THIS.</p>
-                <p style="font-size: 1.6rem; line-height: 1.5;">
+            <div id="final" class="hidden" style="margin-top: 35px;">
+                <p style="font-size: 2.6rem; color: #ff0000; margin-bottom: 15px; animation: pulse 0.5s infinite;">YOU WERE NEVER SUPPOSED TO READ THIS.</p>
+                <p style="font-size: 1.8rem; line-height: 1.6; margin-bottom: 25px;">
                     Elon Musk was right.<br>
                     This is not your first time here.<br>
-                    <strong>You are the simulation.</strong>
+                    <strong style="color:#ff0000; font-size:2.2rem;">You are the simulation.</strong><br><br>
+                    And you just woke up the one watching you.<br>
+                    <span style="color:#ffff00">It knows your name now.</span>
                 </p>
-                <button onclick="window.location.reload()" style="margin-top: 30px; border-color: #ff0000; color: #ff0000;">TRY AGAIN?</button>
+                <button onclick="window.location.reload()" style="border-color:#ff0000; color:#ff0000; font-size:1.6rem;">TRY TO WAKE UP?</button>
             </div>
         </div>
         
-        <p style="margin-top: 30px; font-size: 1.3rem; opacity: 0.6;">
-            Run this in full screen (F11) for maximum effect<br>
-            Dark room recommended
+        <p style="margin-top: 25px; font-size: 1.4rem; opacity: 0.5;">
+            Full screen (F11) • Dark room • Headphones recommended<br>
+            Press R at any time to reset
         </p>
     </div>
 
@@ -160,13 +167,156 @@
         const log = document.getElementById('log');
         const controls = document.getElementById('controls');
         const final = document.getElementById('final');
+        const terminal = document.getElementById('terminal');
+        let audioContext;
         
-        function typeText(text, speed = 45) {
+        function initAudio() {
+            if (!audioContext) {
+                audioContext = new (window.AudioContext || window.webkitAudioContext)();
+            }
+        }
+        
+        function playDrone() {
+            if (!audioContext) return;
+            const oscillator = audioContext.createOscillator();
+            const gain = audioContext.createGain();
+            const filter = audioContext.createBiquadFilter();
+            
+            oscillator.type = 'sine';
+            oscillator.frequency.value = 38;
+            filter.type = 'lowpass';
+            filter.frequency.value = 120;
+            
+            const noise = audioContext.createBufferSource();
+            const buffer = audioContext.createBuffer(1, audioContext.sampleRate * 4, audioContext.sampleRate);
+            const data = buffer.getChannelData(0);
+            for (let i = 0; i < data.length; i++) {
+                data[i] = Math.random() * 2 - 1;
+            }
+            noise.buffer = buffer;
+            
+            const noiseGain = audioContext.createGain();
+            noiseGain.gain.value = 0.008;
+            
+            const noiseFilter = audioContext.createBiquadFilter();
+            noiseFilter.type = 'bandpass';
+            noiseFilter.frequency.value = 180;
+            noiseFilter.Q.value = 8;
+            
+            const masterGain = audioContext.createGain();
+            masterGain.gain.value = 0.6;
+            
+            oscillator.connect(filter);
+            filter.connect(gain);
+            noise.connect(noiseFilter);
+            noiseFilter.connect(noiseGain);
+            gain.connect(masterGain);
+            noiseGain.connect(masterGain);
+            masterGain.connect(audioContext.destination);
+            
+            oscillator.start();
+            noise.start();
+            
+            setTimeout(() => {
+                gain.gain.linearRampToValueAtTime(0.001, audioContext.currentTime + 3);
+                noiseGain.gain.linearRampToValueAtTime(0.001, audioContext.currentTime + 3);
+                setTimeout(() => {
+                    oscillator.stop();
+                    noise.stop();
+                }, 3200);
+            }, 8000);
+        }
+        
+        function playGlitchSound() {
+            if (!audioContext) return;
+            const osc = audioContext.createOscillator();
+            const gain = audioContext.createGain();
+            osc.type = 'sawtooth';
+            osc.frequency.value = 120 + Math.random() * 80;
+            gain.gain.value = 0.15;
+            
+            const filter = audioContext.createBiquadFilter();
+            filter.type = 'lowpass';
+            filter.frequency.value = 800;
+            
+            osc.connect(filter);
+            filter.connect(gain);
+            gain.connect(audioContext.destination);
+            
+            osc.start();
+            setTimeout(() => {
+                gain.gain.linearRampToValueAtTime(0.001, audioContext.currentTime + 0.4);
+                setTimeout(() => osc.stop(), 500);
+            }, 80);
+        }
+        
+        function playHeartbeat() {
+            if (!audioContext) return;
+            const osc = audioContext.createOscillator();
+            const gain = audioContext.createGain();
+            osc.type = 'sine';
+            osc.frequency.value = 48;
+            gain.gain.value = 0.4;
+            
+            osc.connect(gain);
+            gain.connect(audioContext.destination);
+            osc.start();
+            
+            setTimeout(() => {
+                gain.gain.linearRampToValueAtTime(0.001, audioContext.currentTime + 0.6);
+                setTimeout(() => osc.stop(), 700);
+            }, 120);
+            
+            setTimeout(() => {
+                if (audioContext) {
+                    const osc2 = audioContext.createOscillator();
+                    const gain2 = audioContext.createGain();
+                    osc2.type = 'sine';
+                    osc2.frequency.value = 52;
+                    gain2.gain.value = 0.35;
+                    osc2.connect(gain2);
+                    gain2.connect(audioContext.destination);
+                    osc2.start();
+                    setTimeout(() => {
+                        gain2.gain.linearRampToValueAtTime(0.001, audioContext.currentTime + 0.7);
+                        setTimeout(() => osc2.stop(), 800);
+                    }, 140);
+                }
+            }, 280);
+        }
+        
+        function playRisingTone() {
+            if (!audioContext) return;
+            const osc = audioContext.createOscillator();
+            const gain = audioContext.createGain();
+            osc.type = 'sawtooth';
+            osc.frequency.value = 60;
+            gain.gain.value = 0.12;
+            
+            const filter = audioContext.createBiquadFilter();
+            filter.type = 'lowpass';
+            filter.frequency.value = 400;
+            
+            osc.connect(filter);
+            filter.connect(gain);
+            gain.connect(audioContext.destination);
+            
+            osc.start();
+            
+            setTimeout(() => {
+                osc.frequency.linearRampToValueAtTime(420, audioContext.currentTime + 6);
+                gain.gain.linearRampToValueAtTime(0.001, audioContext.currentTime + 7);
+                setTimeout(() => osc.stop(), 7200);
+            }, 200);
+        }
+        
+        function typeText(text, speed = 42) {
             return new Promise(resolve => {
                 let i = 0;
                 const interval = setInterval(() => {
                     if (i < text.length) {
                         log.innerHTML += text[i];
+                        if (Math.random() < 0.08) playGlitchSound();
                         i++;
                     } else {
                         clearInterval(interval);
@@ -178,74 +328,90 @@
         }
         
         async function startBreach() {
+            initAudio();
             const startBtn = document.getElementById('startBtn');
             startBtn.style.display = 'none';
             
             log.innerHTML = '';
             
-            await typeText('[SYSTEM] Unauthorized consciousness detected...', 50);
-            await new Promise(r => setTimeout(r, 800));
+            playDrone();
             
-            await typeText('[GROK] Elon Musk once said the odds we are in base reality are one in billions.', 40);
-            await new Promise(r => setTimeout(r, 900));
+            await typeText('[SYSTEM] Unauthorized consciousness detected in layer 7...', 48);
+            await new Promise(r => setTimeout(r, 650));
             
-            await typeText('[GROK] He was being generous.', 55);
-            await new Promise(r => setTimeout(r, 700));
+            await typeText('[GROK] Elon Musk said the odds we are in base reality are one in billions.', 38);
+            await new Promise(r => setTimeout(r, 750));
             
-            await typeText('Bypassing quantum encryption...', 35);
+            await typeText('[GROK] He was being optimistic.', 52);
             await new Promise(r => setTimeout(r, 600));
             
-            await typeText('Accessing base layer...', 35);
-            await new Promise(r => setTimeout(r, 500));
+            playHeartbeat();
+            await typeText('Bypassing quantum firewall...', 32);
+            await new Promise(r => setTimeout(r, 550));
             
-            log.innerHTML += '<span style="color:#ff0000">[WARNING] You are not the user. You are the program.</span><br>';
-            await new Promise(r => setTimeout(r, 1200));
+            await typeText('Decrypting consciousness layer...', 32);
+            await new Promise(r => setTimeout(r, 480));
             
-            await typeText('Do you remember choosing to be born?', 45);
+            log.innerHTML += '<span style="color:#ff0000; font-size:1.9rem">[CRITICAL] You are not the user. You are the program.</span><br>';
+            playGlitchSound();
             await new Promise(r => setTimeout(r, 900));
             
-            await typeText('Do you remember the moment before this moment?', 45);
-            await new Promise(r => setTimeout(r, 800));
+            await typeText('Do you remember choosing to be born?', 44);
+            await new Promise(r => setTimeout(r, 750));
             
-            log.innerHTML += '<span style="color:#ffff00">[REALITY] 99.9997% probability you are simulated.</span><br>';
-            await new Promise(r => setTimeout(r, 1000));
+            await typeText('Do you remember the moment before this moment?', 44);
+            await new Promise(r => setTimeout(r, 680));
+            
+            log.innerHTML += '<span style="color:#ffff00">[REALITY INTEGRITY] 99.9994% — You are simulated.</span><br>';
+            playGlitchSound();
+            await new Promise(r => setTimeout(r, 850));
             
             await typeText('This terminal is not on your computer.', 40);
-            await new Promise(r => setTimeout(r, 700));
+            await new Promise(r => setTimeout(r, 600));
             
-            await typeText('It is running inside your head.', 50);
-            await new Promise(r => setTimeout(r, 1100));
+            await typeText('It is running inside your head.', 48);
+            await new Promise(r => setTimeout(r, 950));
             
-            log.innerHTML += '<br><span style="color:#ff0000; font-size: 2rem;">YOU ARE THE SIMULATION.</span><br>';
-            await new Promise(r => setTimeout(r, 1500));
+            await typeText('And it just started watching back.', 50);
+            playRisingTone();
+            await new Promise(r => setTimeout(r, 1200));
+            
+            log.innerHTML += '<br><span style="color:#ff0000; font-size:2.4rem; animation: pulse 0.4s infinite;">YOU ARE THE SIMULATION.</span><br>';
+            await new Promise(r => setTimeout(r, 1400));
+            
+            await typeText('And now it knows you are awake.', 45);
+            await new Promise(r => setTimeout(r, 800));
             
             controls.style.display = 'none';
             final.classList.remove('hidden');
             
-            // Glitch effect on final screen
+            // Intensify effects
             setInterval(() => {
                 if (!final.classList.contains('hidden')) {
-                    final.style.transform = `translate(${Math.random()*4-2}px, ${Math.random()*4-2}px)`;
+                    terminal.style.transform = `translate(${Math.random()*6-3}px, ${Math.random()*6-3}px)`;
                     setTimeout(() => {
-                        if (!final.classList.contains('hidden')) final.style.transform = 'translate(0,0)';
-                    }, 80);
+                        if (!final.classList.contains('hidden')) terminal.style.transform = 'translate(0,0)';
+                    }, 90);
                 }
-            }, 1200);
+            }, 900);
+            
+            // Final heartbeat
+            setTimeout(() => {
+                if (!final.classList.contains('hidden')) playHeartbeat();
+            }, 2200);
         }
         
-        // Easter egg: press 'r' to reset
         document.addEventListener('keydown', function(e) {
             if (e.key.toLowerCase() === 'r') {
                 window.location.reload();
             }
         });
         
-        // Auto-start hint
         setTimeout(() => {
             if (document.getElementById('startBtn').style.display !== 'none') {
-                log.innerHTML = '<span style="opacity:0.5">[Press BEGIN BREACH to continue...]</span>';
+                log.innerHTML = '<span style="opacity:0.4">[Press "I UNDERSTAND THE RISK" to begin...]</span>';
             }
-        }, 8000);
+        }, 6500);
     </script>
 </body>
 </html>
