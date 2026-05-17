@@ -14,18 +14,23 @@
 
 ## 🔄 Current Projects
 
-| File | Description |
-|------|-------------|
-| `grok_says.py` | A fun interactive Grok quote generator |
-| `.gitignore` | Python-friendly ignore rules |
-| `LICENSE` | MIT License (free to use!) |
+| File                  | Description                              |
+|-----------------------|------------------------------------------|
+| `grok_says.py`        | Interactive Grok quote generator        |
+| `grok_fortune.py`     | Grok Fortune Teller (ask anything!)     |
+| `grok_adventure.py`   | Tiny text adventure game                |
+| `.gitignore`          | Python-friendly ignore rules            |
+| `LICENSE`             | MIT License (free to use!)              |
 
 ## 🚀 How to play
 
 ```bash
 git clone https://github.com/tbrewitt/grok-playground.git
 cd grok-playground
-python grok_says.py
+
+python grok_says.py        # Quotes
+python grok_fortune.py     # Fortunes
+python grok_adventure.py   # Adventure time!
 ```
 
 ## 🤖 Made with love (and zero coffee)
@@ -34,4 +39,4 @@ python grok_says.py
 
 ---
 
-*Want me to add something specific? Just say the word!*
+*Want me to add something specific? Just say the word, buddy!*
