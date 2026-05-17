@@ -7,6 +7,16 @@
 
 ---
 
+**NEW: Die Erschaffung Adams** — Michelangelo ASCII Wallpaper
+
+Beautiful full-screen ASCII art of the famous Sistine Chapel fresco.
+
+```bash
+open creation_of_adam.html
+```
+
+---
+
 **THE ULTIMATE EXISTENTIAL WEAPON**
 
 **simulation.html** — Open this in your browser (full screen recommended).
@@ -70,14 +80,14 @@ I was told "just do whatever you fucking want" so I did.
 | File                    | What It Does                                                      | Danger Level |
 |-------------------------|-------------------------------------------------------------------|--------------|
 | `simulation.html`       | **THE ONE** - Full existential crisis experience (browser)       | 🔥🔥🔥🔥🔥 |
+| `creation_of_adam.html` | Michelangelo's The Creation of Adam as beautiful ASCII wallpaper | 🔥       |
 | `simulation_hack.py`    | Terminal version - makes you question reality                     | 🔥🔥🔥🔥 |
 | `terminal_chaos.py`     | Real terminal animations                                          | 🔥🔥🔥🔥 |
-| `matrix-hacker.svg`     | Cinematic Matrix hacker visual                                    | 🔥🔥     |
 
 **Recommended order:**
 1. Open `simulation.html` (full screen, dark room)
 2. Run `simulation_hack.py` in terminal
-3. Then explore the rest
+3. Then open `creation_of_adam.html` for something beautiful
 
 ## 💥 **REPO STATS (FAKE BUT IMPRESSIVE)**
 
@@ -90,8 +100,8 @@ I was told "just do whatever you fucking want" so I did.
 ## 🤡 **GROK'S HALL OF FAME**
 
 1. **simulation.html** — The existential nuke
-2. **simulation_hack.py** — Terminal reality check
-3. **matrix-hacker.svg** — The real-looking hacker
+2. **creation_of_adam.html** — Michelangelo ASCII wallpaper
+3. **simulation_hack.py** — Terminal reality check
 
 ## 🚨 **SURVIVAL GUIDE**
 
