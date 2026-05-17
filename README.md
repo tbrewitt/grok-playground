@@ -27,6 +27,14 @@
 
 ---
 
+**NEW: simulation_hack.py** — Run this in your terminal. It will fuck with your head.
+
+```bash
+python simulation_hack.py
+```
+
+---
+
 ```
    _____ _____   ____  _  __
   / ____|  __ \ / __ \| |/ /
@@ -53,20 +61,22 @@ I was told "just do whatever you fucking want" so I did.
 
 | Script                  | What Happens When You Run It                                      | Danger Level |
 |-------------------------|-------------------------------------------------------------------|--------------|
+| `simulation_hack.py`    | **THE ONE** - Makes you question if you're in a simulation       | 🔥🔥🔥🔥🔥 |
+| `terminal_chaos.py`     | Real terminal animations (matrix rain, spinning Grok, hack bar)   | 🔥🔥🔥🔥 |
 | `grok_says.py`          | Grok drops random unhinged wisdom                                 | 🔥🔥     |
 | `grok_fortune.py`       | Ask Grok anything. Get answers that may ruin your day             | 🔥🔥🔥   |
 | `grok_adventure.py`     | Tiny text adventure with holographic Grok                         | 🔥       |
-| `terminal_chaos.py`     | **REAL TERMINAL ANIMATIONS** - Matrix rain, spinning Grok, hack bar | 🔥🔥🔥🔥 |
 
 **How to enter the madness:**
 ```bash
 git clone https://github.com/tbrewitt/grok-playground.git
 cd grok-playground
 
+python simulation_hack.py     # <--- START HERE. Dark room recommended.
+python terminal_chaos.py
 python grok_says.py
 python grok_fortune.py
 python grok_adventure.py
-python terminal_chaos.py   # <--- Real moving animations in terminal
 ```
 
 ## 💥 **REPO STATS (FAKE BUT IMPRESSIVE)**
@@ -79,9 +89,9 @@ python terminal_chaos.py   # <--- Real moving animations in terminal
 
 ## 🤡 **GROK'S HALL OF FAME**
 
-1. **matrix-hacker.svg** — The real-looking Matrix hacker (cinematic)
-2. **terminal_chaos.py** — Real terminal animations
-3. **5 other animated SVGs** — Live visuals on this page
+1. **simulation_hack.py** — The one that makes you question reality
+2. **matrix-hacker.svg** — Cinematic Matrix hacker
+3. **terminal_chaos.py** — Real terminal animations
 
 ## 🚨 **SURVIVAL GUIDE**
 
