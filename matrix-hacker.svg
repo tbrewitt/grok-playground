@@ -1,0 +1,97 @@
+<svg width="700" height="500" viewBox="0 0 700 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Matrix green glow -->
+    <linearGradient id="matrixGreen" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#003300"/>
+      <stop offset="100%" style="stop-color:#001100"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="3"/>
+    </filter>
+  </defs>
+
+  <!-- Dark background -->
+  <rect width="700" height="500" fill="#000000"/>
+
+  <!-- Subtle grid -->
+  <g opacity="0.15">
+    <path d="M0 0 L700 0 L700 500 L0 500 Z" fill="none" stroke="#00ff41" stroke-width="1"/>
+    <path d="M50 0 L50 500" fill="none" stroke="#00ff41" stroke-width="1"/>
+    <path d="M150 0 L150 500" fill="none" stroke="#00ff41" stroke-width="1"/>
+    <path d="M250 0 L250 500" fill="none" stroke="#00ff41" stroke-width="1"/>
+    <path d="M350 0 L350 500" fill="none" stroke="#00ff41" stroke-width="1"/>
+    <path d="M450 0 L450 500" fill="none" stroke="#00ff41" stroke-width="1"/>
+    <path d="M550 0 L550 500" fill="none" stroke="#00ff41" stroke-width="1"/>
+    <path d="M650 0 L650 500" fill="none" stroke="#00ff41" stroke-width="1"/>
+  </g>
+
+  <!-- Falling Matrix Code (multiple layers for depth) -->
+  <g font-family="monospace" font-size="14" fill="#00ff41" opacity="0.9">
+    <!-- Column 1 -->
+    <text x="60" y="-30">01010101</text>
+    <animate attributeName="y" values="-30;530" dur="2.8s" repeatCount="indefinite"/>
+    <text x="60" y="-80">GROK</text>
+    <animate attributeName="y" values="-80;530" dur="3.2s" repeatCount="indefinite"/>
+    
+    <!-- Column 2 -->
+    <text x="140" y="-50">10101010</text>
+    <animate attributeName="y" values="-50;530" dur="2.1s" repeatCount="indefinite"/>
+    <text x="140" y="-120">MATRIX</text>
+    <animate attributeName="y" values="-120;530" dur="2.9s" repeatCount="indefinite"/>
+    
+    <!-- Column 3 -->
+    <text x="220" y="-20">11001100</text>
+    <animate attributeName="y" values="-20;530" dur="3.5s" repeatCount="indefinite"/>
+    
+    <!-- Column 4 -->
+    <text x="300" y="-60">GROK IS WATCHING</text>
+    <animate attributeName="y" values="-60;530" dur="2.4s" repeatCount="indefinite"/>
+    
+    <!-- Column 5 -->
+    <text x="380" y="-40">00110011</text>
+    <animate attributeName="y" values="-40;530" dur="2.7s" repeatCount="indefinite"/>
+    
+    <!-- Column 6 -->
+    <text x="460" y="-90">CHAOS</text>
+    <animate attributeName="y" values="-90;530" dur="3.1s" repeatCount="indefinite"/>
+    
+    <!-- Column 7 -->
+    <text x="540" y="-25">11110000</text>
+    <animate attributeName="y" values="-25;530" dur="2.3s" repeatCount="indefinite"/>
+    
+    <!-- Column 8 -->
+    <text x="620" y="-70">WAKE UP</text>
+    <animate attributeName="y" values="-70;530" dur="3.4s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- Hooded Hacker Silhouette -->
+  <g>
+    <!-- Hood -->
+    <path d="M280 180 Q350 120 420 180 Q420 280 350 320 Q280 280 280 180" fill="#111111" stroke="#00ff41" stroke-width="2"/>
+    
+    <!-- Face glow -->
+    <ellipse cx="350" cy="240" rx="45" ry="55" fill="#001100" opacity="0.6"/>
+    
+    <!-- Eyes (glowing) -->
+    <ellipse cx="330" cy="225" rx="8" ry="12" fill="#00ff41">
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="1.2s" repeatCount="indefinite"/>
+    </ellipse>
+    <ellipse cx="370" cy="225" rx="8" ry="12" fill="#00ff41">
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="1.4s" repeatCount="indefinite"/>
+    </ellipse>
+    
+    <!-- Shoulders -->
+    <path d="M250 280 Q350 340 450 280" fill="#111111" stroke="#00ff41" stroke-width="3"/>
+  </g>
+
+  <!-- Scanlines -->
+  <rect x="0" y="0" width="700" height="4" fill="#ffffff" opacity="0.08">
+    <animate attributeName="y" values="0;496;0" dur="1.8s" repeatCount="indefinite"/>
+  </rect>
+  <rect x="0" y="200" width="700" height="2" fill="#ffffff" opacity="0.1">
+    <animate attributeName="y" values="200;500;200" dur="2.2s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Subtle vignette -->
+  <rect width="700" height="500" fill="url(#matrixGreen)" opacity="0.3"/>
+</svg>
